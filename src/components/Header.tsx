@@ -11,8 +11,9 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/logo-light-ink.svg'
 import { NavLink } from '@/components/NavLink'
+import Image from 'next/image'
 
 function MobileNavLink({
   href,
@@ -22,7 +23,7 @@ function MobileNavLink({
   children: React.ReactNode
 }) {
   return (
-    <PopoverButton as={Link} href={href} className="block w-full p-2">
+    <PopoverButton as={Link} href={href} className="block w-full p-2 hover:bg-wildberry-50 active:bg-wildberry-50 rounded-md">
       {children}
     </PopoverButton>
   )
@@ -66,7 +67,7 @@ function MobileNavigation() {
       </PopoverButton>
       <PopoverBackdrop
         transition
-        className="fixed inset-0 bg-slate-300/50 duration-150 data-[closed]:opacity-0 data-[enter]:ease-out data-[leave]:ease-in"
+        className="fixed inset-0 bg-slate-600/50 duration-150 data-[closed]:opacity-0 data-[enter]:ease-out data-[leave]:ease-in"
       />
       <PopoverPanel
         transition
@@ -89,7 +90,7 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Image alt="Unicorn Hiring" src={Logo} className="max-h-10 w-auto mb-2" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
@@ -101,7 +102,7 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <Button href="/register" color="blue">
+            <Button href="/register" color="wildberry">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>

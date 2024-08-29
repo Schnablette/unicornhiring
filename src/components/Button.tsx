@@ -12,15 +12,18 @@ const variantStyles = {
   solid: {
     slate:
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
+    wildberry:
+      'bg-wildberry-950 text-white hover:text-slate-100 hover:bg-black/50 active:bg-wildberry-black/70 active:text-wildberry-100 focus-visible:outline-wildberry-600',
     white:
-      'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+      'bg-white text-slate-900 hover:bg-wildberry-50 active:bg-wildberry-200 active:text-slate-600 focus-visible:outline-white',
   },
   outline: {
     slate:
-      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
+      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-wildberry-600 focus-visible:ring-slate-300',
     white:
       'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
+    wildberry:
+      'ring-wildberry-700 text-wildberry-50 hover:ring-wildberry-500 active:ring-wildberry-700 active:text-wildberry-400 focus-visible:outline-white',
   },
 }
 

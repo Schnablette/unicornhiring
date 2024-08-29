@@ -12,30 +12,26 @@ import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
+import interviewImage from '@/images/screenshots/interview.jpg'
+
 const features = [
   {
-    title: 'Payroll',
+    title: 'Find',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "We locate and contact top-tier talent that could be a good fit for your team, communicating with transparency.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Interview',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "We vet candidates, weeding out lesser fits before scheduling their interview with you.",
+    image: interviewImage,
   },
   {
-    title: 'VAT handling',
+    title: 'Hire',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "We assist throughout the lifecycle of a candidate, including providing an offer, negotiating terms, and contract signing.",
     image: screenshotVatReturns,
-  },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
   },
 ]
 
@@ -76,11 +72,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Find quality candidates faster with Unicorn Hiring.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            We partner with startups to find, interview, and hire top remote talent across the US.
           </p>
         </div>
         <TabGroup
